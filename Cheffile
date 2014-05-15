@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+
+cookbook 'apt', '1.10.0'
+cookbook 'ntp'
+cookbook 'timezone', '0.0.1'
+cookbook 'networking_basic',
+  :github => 'fred/fredz_cookbooks'
+
+cookbook 'imagemagick'
+cookbook 'nodejs'
+cookbook 'php'
+cookbook 'apache2'
+cookbook 'mysql'
+cookbook 'database'
+cookbook 'graphicsmagick',
+  :github => 'jondot/graphicsmagick_cookbook'
+
+cookbook 'typo3',
+  :github => 'irnnr/chef-typo3'
+
+cookbook 'build-essential'
+cookbook 'vim',
+  :git => 'git://github.com/opscode-cookbooks/vim.git'
+
+cookbook 'git',
+  :git => 'https://github.com/fnichol/chef-git.git'
+
+cookbook 'mysql'
+
+cookbook 'oh_my_zsh',
+  :git => 'https://github.com/shingara/oh-my-zsh-chef.git'
+
